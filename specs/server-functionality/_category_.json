@@ -1,0 +1,8 @@
+{
+  "label": "Server functionality",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Managed Components provides a couple of methods that allow a tool to introduce server-side functionality"
+  }
+}

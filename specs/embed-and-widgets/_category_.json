@@ -1,0 +1,8 @@
+{
+  "label": "Embeds and Widgets",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Managed Components can provide embeds (elements pre-placed by the website owner using a placeholder) and widgets (floating elements)."
+  }
+}
