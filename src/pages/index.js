@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://github.com/managed-components/starter-template"
+            to="https://github.com/managed-components/create-managed-component"
           >
             Write your own Managed Component - 5min ⏱️
           </Link>

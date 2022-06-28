@@ -1,4 +1,4 @@
-# Known Managed Components 
+# Known Managed Components
 
 - [Bing](https://github.com/managed-components/bing)
 - [Facebook Pixel](https://github.com/managed-components/facebook-pixel)
@@ -12,6 +12,6 @@ If you've built a Managed Component and you want it added to the list, let us kn
 
 
 # Build your own
+- [Scaffold Template Script](https://github.com/managed-components/create-managed-component)
 - [Demo component](https://github.com/managed-components/demo)
-- [Starter template](https://github.com/managed-components/starter-template)
 - [Types](https://github.com/managed-components/types)
