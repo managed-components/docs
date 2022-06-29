@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Managed Component
@@ -13,5 +13,3 @@ Tools that provide a Managed Component can earn from multiple capabilities:
 - **Reliable client events**: Subscribe to client-side events in a cross-platform reliable way
 - **Pre-Page-Rendering Actions**: Run server-side actions that read or write a website page, before the browser started rendering it
 - **Integrated Consent Manager support**: Easier integration in a consent-aware environment
-
-
