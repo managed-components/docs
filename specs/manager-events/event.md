@@ -1,4 +1,4 @@
-# Client created
+# Event
 
 The `event` event is dispatched for any new event.
 

@@ -1,4 +1,4 @@
-# Client created
+# Ecommerce
 
 The `ecommerce` event is dispatched for an ecommerce event.
 
