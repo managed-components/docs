@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # User-configured events
 
 Users can configure events using a site-wide [Events API](https://webcm.dev/web-api), and then map these events to different tools. A tool can register to listen to events and then define the way it will be processed.
