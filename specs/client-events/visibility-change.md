@@ -3,7 +3,7 @@
 ```js
 
 manager.createEventListener('visibilityChange', async event => {
-    console.info('New performance entries!', event.payload)
+    console.info('Is no longer visible!', event.payload)
 })
 
 ```
