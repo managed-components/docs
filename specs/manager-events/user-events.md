@@ -1,10 +1,6 @@
----
-sidebar_position: 6
----
-
 # User-configured events
 
-Users can configure events using a site-wide [Events API](https://webcm.dev/web-api), and then map these events to different tools. A tool can register to listen to events and then define the way it will be processed.
+Managers allow users to dispatch events from their website, and then map these configured events to different tools. A tool can register to listen to events and then define the way it will be processed.
 
 ```js
 manager.addEventListener('event', async ({ context, client }) => {
