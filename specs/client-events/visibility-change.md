@@ -3,7 +3,7 @@
 ```js
 
 manager.createEventListener('visibilityChange', async event => {
-    console.info('Is no longer visible!', event.payload)
+    console.info('Page visibility toggled!', event.payload)
 })
 
 ```
