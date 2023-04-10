@@ -13,8 +13,8 @@ manager.addEventListener('event', async ({ context, client }) => {
     },
   })
 
-  // Check that the client is a browser
-  if (client.type === 'browser') {
+  // Check client browser
+  if (client.userAgent.includes('Chrome')) {
     client.set('example-uuid', uuidv4())
     client.fetch(
       `https://example.com/collectFromBrowser?dt=${system.page.title}`
