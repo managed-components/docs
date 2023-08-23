@@ -23,6 +23,7 @@ sidebar_position: 1
     ```
 3. Build your component with
    ```bash
+   npm install
    npm run build
    ```
 
