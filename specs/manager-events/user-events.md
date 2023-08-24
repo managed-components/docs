@@ -5,7 +5,7 @@ Managers allow users to dispatch events from their website, and then map these c
 ```js
 manager.addEventListener('event', async ({ context, client }) => {
   // Send server-side request
-  fetch('https://example.com/collect', {
+  manager.fetch('https://example.com/collect', {
     method: 'POST',
     data: {
       ip: context.system.device.ip,
