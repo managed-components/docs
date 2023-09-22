@@ -15,3 +15,8 @@ The following table describes the permissions that a tool can ask for when being
 | serve_static_files           | `serve`                                           |
 | provide_server_functionality | `proxy`, `route`                                  |
 | provide_widget               | `provideWidget`                                   |
+| provide_ecommerce            | `ecommerce`                                       |
+| provide_client_events        | `event`                                           |
+| provide_manager_events       | `event`                                           |
+| provide_user_events          | `event`                                           |
+| provide_pageviews            | `pageview`                                        |
