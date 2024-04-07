@@ -28,10 +28,14 @@
 - [Upward](https://github.com/managed-components/upward)
 - [Ziprecruiter](https://github.com/managed-components/ziprecruiter)
 
+# Community Managed Components
+
+- [PostHog](https://github.com/mountainash/posthog-managed-component) _contibutions welcome_
+
 If you've built a Managed Component and you want it added to the list, let us know!
 
-
 # Build your own
+
 - [Scaffold Template Script](https://github.com/managed-components/create-managed-component)
 - [Demo component](https://github.com/managed-components/demo)
 - [Types](https://github.com/managed-components/types)
