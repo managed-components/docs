@@ -3,18 +3,16 @@
 Floating widgets are not replacing an element, instead, they are appended to the `<body>` tag of the page. Inside the External Component, a floating tweet widget will be defined like this:
 
 ```js
-manager.registerWidget("floatingTweet", ({ element }) => {
+manager.registerWidget(async () => {
   const tweetId = element.attributes["tweet-id"];
   const tweet = await manager.useCache(
     "tweet-" + tweetId,
     await(await fetch("https://api.twitter.com/tweet/" + tweetId)).json()
   );
 
-  element.render(
-    await manager.useCache(
-      "widget",
-      pug.compile("templates/floating-widget.pug", { tweet })
-    )
+  return await manager.useCache(
+    "widget",
+    pug.compile("templates/floating-widget.pug", { tweet })
   );
 });
 ```
