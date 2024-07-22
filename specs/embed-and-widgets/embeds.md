@@ -4,30 +4,36 @@ To place an embed in the page, the website owner includes a placeholder `div` el
 
 ```html
 <div
-  data-component-embed="twitter-example"
+  data-component-embed="weather-example"
   data-dark-theme
-  data-tweet-id="1488098745438855172"
+  data-location="Portugal"
 ></div>
 ```
 
 Inside the External Component, the embed will be defined like in this example:
 
 ```js
-manager.registerEmbed("twitter-example", ({ element }) => {
-  const color = element.attributes["dark-theme"] ? "light" : "dark";
-  const tweetId = element.attributes["tweet-id"];
-  const tweet = await manager.useCache(
-    "tweet-" + tweetId,
-    await(await fetch("https://api.twitter.com/tweet/" + tweetId)).json()
-  );
-
-  element.render(
-    await manager.useCache(
-      "widget",
-      pug.compile("templates/widget.pug", { tweet, color })
-    )
-  );
-});
+manager.registerEmbed(
+  "weather-example",
+  async ({ parameters }: { parameters: { [k: string]: unknown } }) => {
+    const location = parameters["location"];
+    const embed = await manager.useCache("weather-" + location, async () => {
+      try {
+        const response = await manager.fetch(
+          `https://wttr.in/${location}?format=j1`
+        );
+        const data = await response.json();
+        const [summary] = data.current_condition;
+        const { temp_C } = summary;
+        return `<p>Temperature in ${location} is: ${temp_C} &#8451;</p>`;
+      } catch (error) {
+        console.error("error fetching weather for embed:", error);
+        return `<p> Error loading weather for ${location} ${error}`;
+      }
+    });
+    return embed;
+  }
+);
 ```
 
-In the above example, the tool defined an embed called `twitter-example`. It checks for some HTML attributes on the placeholder element, makes a request to a remote API, caches it, and then renders the new element instead the placeholder using the [Pug templating engine](https://pugjs.org/). Note the Pug templating system isn't a part of the External Component API - a tool can choose to use whatever templating engine it wants, as long as it responds with valid HTML code.
+In the above example, the tool defined an embed called `weather-example`. It makes a request to a remote API, caches it, and then renders a simple html with using the data from the fetch response.
