@@ -15,7 +15,7 @@ Inside the External Component, the embed will be defined like in this example:
 ```js
 manager.registerEmbed(
   "weather-example",
-  async ({ parameters }: { parameters: { [k: string]: unknown } }) => {
+  async ({ parameters }: { parameters: { [k: string]: string } }) => {
     const location = parameters["location"];
     const embed = await manager.useCache("weather-" + location, async () => {
       try {
@@ -28,7 +28,7 @@ manager.registerEmbed(
         return `<p>Temperature in ${location} is: ${temp_C} &#8451;</p>`;
       } catch (error) {
         console.error("error fetching weather for embed:", error);
-        return `<p> Error loading weather for ${location} ${error}`;
+        return `<p>Error loading weather for ${location}: ${error}</p>`;
       }
     });
     return embed;
