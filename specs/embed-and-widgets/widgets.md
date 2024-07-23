@@ -1,6 +1,6 @@
 # Widget support
 
-Floating widgets are not replacing an element, instead, they are appended to the `<body>` tag of the page. Inside the External Component, a floating tweet widget will be defined like this:
+Floating widgets are appended to the `<body>` tag of the page. A weather widget can be defined like this:
 
 ```js
 manager.registerWidget(async () => {
@@ -22,6 +22,6 @@ manager.registerWidget(async () => {
 });
 ```
 
-In the above example, the tool defines a weather widget. The widget will be loaded on all your website's pages unless configured from a [component manager](https://managedcomponents.dev/getting-started/components-manager) to do differently. 
+The widget will be loaded on all your website's pages unless configured from a [component manager](https://managedcomponents.dev/getting-started/components-manager) to load differently. 
 
-The main difference between embeds and widgets is that widgets are always going to be loaded on any page you choose to load them, while embeds are only going to replace a ` <div data-component-embed="weather-example"></div>`
+The main difference between embeds and widgets is that widgets are always going to be loaded on any page you choose to load them, while embeds are only going to replace an existing `<div data-component-embed="weather-example"></div>`

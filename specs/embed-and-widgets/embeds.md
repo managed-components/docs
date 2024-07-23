@@ -1,6 +1,6 @@
 # Embed support
 
-To place an embed in the page, the website owner includes a placeholder `div` element. For example, a Twitter embed could look like this:
+To place an embed in the page, the website owner includes a placeholder `div` element. For example, a weather embed could look like this:
 
 ```html
 <div
@@ -36,4 +36,4 @@ manager.registerEmbed(
 );
 ```
 
-In the above example, the tool defined an embed called `weather-example`. It makes a request to a remote API, caches it, and then renders a simple html with using the data from the fetch response.
+In the above example, the tool defines an embed called `weather-example`. It makes a request to a remote API, caches it, and then renders a simple html, using the data from the fetch response.
