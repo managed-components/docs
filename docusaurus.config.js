@@ -104,7 +104,7 @@ const config = {
               },
               {
                 label: "Specifications",
-                to: "/getting-started/intro",
+                to: "/specs/intro",
               },
             ],
           },
