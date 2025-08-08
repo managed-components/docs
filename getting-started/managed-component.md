@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Managed Component
 
-Tools that provide a Managed Component can earn from multiple capabilities:
+Tools that provide a Managed Component can profit from multiple capabilities:
 
 - **Same domain**: Serve assets from the same domain as the website itself, for faster and more secure execution
 - **Website-wide events system**: Hook to a pre-existing events system that the website uses for tracking events - no need to define tool specific API
