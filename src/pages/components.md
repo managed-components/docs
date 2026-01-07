@@ -30,7 +30,8 @@
 
 # Community Managed Components
 
-- [PostHog](https://github.com/mountainash/posthog-managed-component) _contibutions welcome_
+- [PostHog](https://github.com/mountainash/posthog-managed-component)
+- [Simple Analytics](https://github.com/simpleanalytics/zaraz-integration)
 
 If you've built a Managed Component and you want it added to the list, let us know!
 
